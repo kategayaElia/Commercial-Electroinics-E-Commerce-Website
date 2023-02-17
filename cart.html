@@ -1,0 +1,1315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shopping cart</title>
+    <!-- main css -->
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- font awesome js -->
+    <script src="https://kit.fontawesome.com/bce767efab.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="top-nav">
+            <div class="container d-flex">
+              <p>Order Online Or Call Us: +256785672464/+256700932782</p>
+              <ul class="d-flex">
+                <li><a href="index.html"> Home </a></li>
+                <li><a href="Contact.html"> Contact </a></li>
+                <li><a href="About.html"> About Us </a></li>
+                <li><a href="cart.html"> Cart </a></li>
+              </ul>
+            </div>
+          </div>
+        <div class="container py-2">
+            <div class="row py-2">
+                <div class="col-12">
+                    <h1 class="fw-bold text-center mt-2  p-4"> Shopping <span class="text-danger">cart</span></h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="cart rounded shadow">
+                        <div class="first">
+                            <div class="row">
+                                <div class="d-flex flex-wrap justify-content-center rounded p-3 bg-white">
+                                    <div class="col-md-7">
+                                        <div class="d-flex justify-content-start align-items-center">
+                                            <img class="img-small" src="/images/Tronic/bulb1.jpg" alt="Bulb1">
+                                            <h5 class="ps-2">Bulb 1</h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="d-flex align-items-center mt-2 pt-4">
+                                            <div class="col-md-6 col-6 d-flex justify-content-center align-items-center">
+                                                <button class="border-0 bg-transparent" id="Bulb1-decrease"><i class="fas fa-minus me-3"></i></button>
+                                                <input type="number" style="width: 4rem;" class="from-control fw-bold text-center rounded border-0 bg-light p-2" min="0" value="1" id="Bulb1-quantity">
+                                                <button class=" border-0 bg-transparent" id="Bulb1-increase"><i class="fas fa-plus ms-3"></i></button>
+                                            </div>
+                                            <div class="col-md-3 col-3 mx-3 mt-2">
+                                                <h5 class="fw-bold">$<span id="Bulb1-price"> 2 </span></h5>
+                                            </div>
+                                            <div class="col-md-3 col-3 mt-2">
+                                                <img class="cancel-img mb-2" src="images/remove.png" alt="cencel">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 2nd -->
+                        <div class="first">
+                            <div class="row">
+                                <div class="d-flex flex-wrap justify-content-center  rounded p-3 bg-white mt-4">
+                                    <div class="col-md-7">
+                                        <div class="d-flex justify-content-start align-items-center">
+                                            <img class="img-small" src="/images/Tronic/bulb10.jpg" alt="Bulb10">
+                                            <h5 class="ps-2"> Bulb 10 </h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="d-flex align-items-center mt-2 pt-4">
+                                            <div class="col-md-6 col-6 d-flex justify-content-center align-items-center me-3 pe-2">
+                                                <button class="border-0 bg-transparent" id="Bulb10-decrease"><i class="fas fa-minus me-3"></i></button>
+                                                <input type="number" style="width: 4rem;" class="from-control fw-bold text-center rounded border-0 bg-light p-2" min="0" value="1" id="Bulb10-quantity">
+                                                <button class=" border-0 bg-transparent" id="Bulb10-increase"><i class="fas fa-plus ms-3"></i></button>
+                                            </div>
+                                            <div class="col-md-3 col-3 me-3 mt-2">
+                                                <h5 class="fw-bold">$<span id="Bulb10-price"> 2 </span></h5>
+                                            </div>
+                                            <div class="col-md-3 col-3 mt-2">
+                                                <img class=" mb-2 cancel-img" src="images/remove.png" alt="cencel">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                         <!-- 3rd -->
+                         <div class="first">
+                            <div class="row">
+                                <div class="d-flex flex-wrap justify-content-center  rounded p-3 bg-white mt-4">
+                                    <div class="col-md-7">
+                                        <div class="d-flex justify-content-start align-items-center">
+                                            <img class="img-small" src="/images/Tronic/elia.jpg"cable">
+                                            <h5 class="ps-2"> bulb 11 </h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="d-flex align-items-center mt-2 pt-4">
+                                            <div class="col-md-6 col-6 d-flex justify-content-center align-items-center me-3 pe-2">
+                                                <button class="border-0 bg-transparent" id="Bulb11-decrease"><i class="fas fa-minus me-3"></i></button>
+                                                <input type="number" style="width: 4rem;" class="from-control fw-bold text-center rounded border-0 bg-light p-2" min="0" value="1" id="Bulb11-quantity">
+                                                <button class=" border-0 bg-transparent" id="Bulb11-increase"><i class="fas fa-plus ms-3"></i></button>
+                                            </div>
+                                            <div class="col-md-3 col-3 me-3 mt-2">
+                                                <h5 class="fw-bold">$<span id="Bulb11-price"> 2 </span></h5>
+                                            </div>
+                                            <div class="col-md-3 col-3 mt-2">
+                                                <img class=" mb-2 cancel-img" src="images/remove.png" alt="cencel">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                         <!-- 4th -->
+                         <div class="first">
+                            <div class="row">
+                                <div class="d-flex flex-wrap justify-content-center  rounded p-3 bg-white mt-4">
+                                    <div class="col-md-7">
+                                        <div class="d-flex justify-content-start align-items-center">
+                                            <img class="img-small" src="/images/Tronic/bulb2.jpg" alt="Bulb2">
+                                            <h5 class="ps-2"> Bulb 2 </h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="d-flex align-items-center mt-2 pt-4">
+                                            <div class="col-md-6 col-6 d-flex justify-content-center align-items-center me-3 pe-2">
+                                                <button class="border-0 bg-transparent" id="Bulb2-decrease"><i class="fas fa-minus me-3"></i></button>
+                                                <input type="number" style="width: 4rem;" class="from-control fw-bold text-center rounded border-0 bg-light p-2" min="0" value="1" id="Bulb2-quantity">
+                                                <button class=" border-0 bg-transparent" id="Bulb2-increase"><i class="fas fa-plus ms-3"></i></button>
+                                            </div>
+                                            <div class="col-md-3 col-3 me-3 mt-2">
+                                                <h5 class="fw-bold">$<span id="Bulb2-price"> 2 </span></h5>
+                                            </div>
+                                            <div class="col-md-3 col-3 mt-2">
+                                                <img class=" mb-2 cancel-img" src="images/remove.png" alt="cencel">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                          <!-- 5th -->
+                          <div class="first">
+                            <div class="row">
+                                <div class="d-flex flex-wrap justify-content-center  rounded p-3 bg-white mt-4">
+                                    <div class="col-md-7">
+                                        <div class="d-flex justify-content-start align-items-center">
+                                            <img class="img-small" src="/images/Tronic/bulb3.jpg" alt="Bulb3">
+                                            <h5 class="ps-2"> Bulb 3 </h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="d-flex align-items-center mt-2 pt-4">
+                                            <div class="col-md-6 col-6 d-flex justify-content-center align-items-center me-3 pe-2">
+                                                <button class="border-0 bg-transparent" id="Bulb3-decrease"><i class="fas fa-minus me-3"></i></button>
+                                                <input type="number" style="width: 4rem;" class="from-control fw-bold text-center rounded border-0 bg-light p-2" min="0" value="1" id="Bulb3-quantity">
+                                                <button class=" border-0 bg-transparent" id="Bulb3-increase"><i class="fas fa-plus ms-3"></i></button>
+                                            </div>
+                                            <div class="col-md-3 col-3 me-3 mt-2">
+                                                <h5 class="fw-bold">$<span id="Bulb3-price">2</span></h5>
+                                            </div>
+                                            <div class="col-md-3 col-3 mt-2">
+                                                <img class=" mb-2 cancel-img" src="images/remove.png" alt="cencel">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                       
+
+                         <!-- 6th -->
+                         <div class="first">
+                            <div class="row">
+                                <div class="d-flex flex-wrap justify-content-center  rounded p-3 bg-white mt-4">
+                                    <div class="col-md-7">
+                                        <div class="d-flex justify-content-start align-items-center">
+                                            <img class="img-small" src="/images/Tronic/bulb5.jpg" alt="Bulb5">
+                                            <h5 class="ps-2"> Bulb 5</h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="d-flex align-items-center mt-2 pt-4">
+                                            <div class="col-md-6 col-6 d-flex justify-content-center align-items-center me-3 pe-2">
+                                                <button class="border-0 bg-transparent" id="Bulb5-decrease"><i class="fas fa-minus me-3"></i></button>
+                                                <input type="number" style="width: 4rem;" class="from-control fw-bold text-center rounded border-0 bg-light p-2" min="0" value="1" id="Bulb5-quantity">
+                                                <button class=" border-0 bg-transparent" id="Bulb5-increase"><i class="fas fa-plus ms-3"></i></button>
+                                            </div>
+                                            <div class="col-md-3 col-3 me-3 mt-2">
+                                                <h5 class="fw-bold">$<span id="Bulb5-price"> 2 </span></h5>
+                                            </div>
+                                            <div class="col-md-3 col-3 mt-2">
+                                                <img class=" mb-2 cancel-img" src="images/remove.png" alt="cencel">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                         <!-- 7th -->
+                         <div class="first">
+                            <div class="row">
+                                <div class="d-flex flex-wrap justify-content-center  rounded p-3 bg-white mt-4">
+                                    <div class="col-md-7">
+                                        <div class="d-flex justify-content-start align-items-center">
+                                            <img class="img-small" src="/images/Tronic/bulb6.jpg" alt="Bulb6">
+                                            <h5 class="ps-2"> Bulb 6 </h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="d-flex align-items-center mt-2 pt-4">
+                                            <div class="col-md-6 col-6 d-flex justify-content-center align-items-center me-3 pe-2">
+                                                <button class="border-0 bg-transparent" id="Bulb6-decrease"><i class="fas fa-minus me-3"></i></button>
+                                                <input type="number" style="width: 4rem;" class="from-control fw-bold text-center rounded border-0 bg-light p-2" min="0" value="1" id="Bulb6-quantity">
+                                                <button class=" border-0 bg-transparent" id="Bulb6-increase"><i class="fas fa-plus ms-3"></i></button>
+                                            </div>
+                                            <div class="col-md-3 col-3 me-3 mt-2">
+                                                <h5 class="fw-bold">$<span id="Bulb6-price"> 2 </span></h5>
+                                            </div>
+                                            <div class="col-md-3 col-3 mt-2">
+                                                <img class=" mb-2 cancel-img" src="images/remove.png" alt="cencel">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+
+                         <!-- 8th -->
+                         <div class="first">
+                            <div class="row">
+                                <div class="d-flex flex-wrap justify-content-center  rounded p-3 bg-white mt-4">
+                                    <div class="col-md-7">
+                                        <div class="d-flex justify-content-start align-items-center">
+                                            <img class="img-small" src="/images/Tronic/bulb7.jpg" alt="Bulb7">
+                                            <h5 class="ps-2"> Bulb 7 </h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="d-flex align-items-center mt-2 pt-4">
+                                            <div class="col-md-6 col-6 d-flex justify-content-center align-items-center me-3 pe-2">
+                                                <button class="border-0 bg-transparent" id="Bulb7-decrease"><i class="fas fa-minus me-3"></i></button>
+                                                <input type="number" style="width: 4rem;" class="from-control fw-bold text-center rounded border-0 bg-light p-2" min="0" value="1" id="Bulb7-quantity">
+                                                <button class=" border-0 bg-transparent" id="Bulb7-increase"><i class="fas fa-plus ms-3"></i></button>
+                                            </div>
+                                            <div class="col-md-3 col-3 me-3 mt-2">
+                                                <h5 class="fw-bold">$<span id="Bulb7-price"> 2 </span></h5>
+                                            </div>
+                                            <div class="col-md-3 col-3 mt-2">
+                                                <img class=" mb-2 cancel-img" src="images/remove.png" alt="cencel">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                         <!-- 9th -->
+                         <div class="first">
+                            <div class="row">
+                                <div class="d-flex flex-wrap justify-content-center  rounded p-3 bg-white mt-4">
+                                    <div class="col-md-7">
+                                        <div class="d-flex justify-content-start align-items-center">
+                                            <img class="img-small" src="/images/Tronic/bulb8.jpg" alt="Bulb8">
+                                            <h5 class="ps-2"> Bulb 8 </h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="d-flex align-items-center mt-2 pt-4">
+                                            <div class="col-md-6 col-6 d-flex justify-content-center align-items-center me-3 pe-2">
+                                                <button class="border-0 bg-transparent" id="Bulb8-decrease"><i class="fas fa-minus me-3"></i></button>
+                                                <input type="number" style="width: 4rem;" class="from-control fw-bold text-center rounded border-0 bg-light p-2" min="0" value="1" id="Bulb8-quantity">
+                                                <button class=" border-0 bg-transparent" id="Bulb8-increase"><i class="fas fa-plus ms-3"></i></button>
+                                            </div>
+                                            <div class="col-md-3 col-3 me-3 mt-2">
+                                                <h5 class="fw-bold">$<span id="Bulb8-price"> 2 </span></h5>
+                                            </div>
+                                            <div class="col-md-3 col-3 mt-2">
+                                                <img class=" mb-2 cancel-img" src="images/remove.png" alt="cencel">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>      
+                        
+                          <!-- 10th -->
+                          <div class="first">
+                            <div class="row">
+                                <div class="d-flex flex-wrap justify-content-center  rounded p-3 bg-white mt-4">
+                                    <div class="col-md-7">
+                                        <div class="d-flex justify-content-start align-items-center">
+                                            <img class="img-small" src="/images/Tronic/bulb9.jpg" alt="Bulb9">
+                                            <h5 class="ps-2"> Bulb 9 </h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="d-flex align-items-center mt-2 pt-4">
+                                            <div class="col-md-6 col-6 d-flex justify-content-center align-items-center me-3 pe-2">
+                                                <button class="border-0 bg-transparent" id="Bulb9-decrease"><i class="fas fa-minus me-3"></i></button>
+                                                <input type="number" style="width: 4rem;" class="from-control fw-bold text-center rounded border-0 bg-light p-2" min="0" value="1" id="Bulb9-quantity">
+                                                <button class=" border-0 bg-transparent" id="Bulb9-increase"><i class="fas fa-plus ms-3"></i></button>
+                                            </div>
+                                            <div class="col-md-3 col-3 me-3 mt-2">
+                                                <h5 class="fw-bold">$<span id="Bulb9-price"> 2 </span></h5>
+                                            </div>
+                                            <div class="col-md-3 col-3 mt-2">
+                                                <img class=" mb-2 cancel-img" src="images/remove.png" alt="cencel">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>   
+                         <!-- 11th -->
+                         <div class="first">
+                            <div class="row">
+                                <div class="d-flex flex-wrap justify-content-center  rounded p-3 bg-white mt-4">
+                                    <div class="col-md-7">
+                                        <div class="d-flex justify-content-start align-items-center">
+                                            <img class="img-small" src="/images/Tronic/ceiling lights1.jpg" alt="cable1">
+                                            <h5 class="ps-2"> Ceiling Light 1 </h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="d-flex align-items-center mt-2 pt-4">
+                                            <div class="col-md-6 col-6 d-flex justify-content-center align-items-center me-3 pe-2">
+                                                <button class="border-0 bg-transparent" id="cable1-decrease"><i class="fas fa-minus me-3"></i></button>
+                                                <input type="number" style="width: 4rem;" class="from-control fw-bold text-center rounded border-0 bg-light p-2" min="0" value="1" id="cable1-quantity">
+                                                <button class=" border-0 bg-transparent" id="cable1-increase"><i class="fas fa-plus ms-3"></i></button>
+                                            </div>
+                                            <div class="col-md-3 col-3 me-3 mt-2">
+                                                <h5 class="fw-bold">$<span id="cable1-price">15</span></h5>
+                                            </div>
+                                            <div class="col-md-3 col-3 mt-2">
+                                                <img class=" mb-2 cancel-img" src="images/remove.png" alt="cencel">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                        
+                         <!-- 12th -->
+                         <div class="first">
+                            <div class="row">
+                                <div class="d-flex flex-wrap justify-content-center  rounded p-3 bg-white mt-4">
+                                    <div class="col-md-7">
+                                        <div class="d-flex justify-content-start align-items-center">
+                                            <img class="img-small" src="/images/Tronic/ceiling lights10.jpg" alt="cable1">
+                                            <h5 class="ps-2"> Ceiling Light 10 </h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="d-flex align-items-center mt-2 pt-4">
+                                            <div class="col-md-6 col-6 d-flex justify-content-center align-items-center me-3 pe-2">
+                                                <button class="border-0 bg-transparent" id="cable1-decrease"><i class="fas fa-minus me-3"></i></button>
+                                                <input type="number" style="width: 4rem;" class="from-control fw-bold text-center rounded border-0 bg-light p-2" min="0" value="1" id="cable1-quantity">
+                                                <button class=" border-0 bg-transparent" id="cable1-increase"><i class="fas fa-plus ms-3"></i></button>
+                                            </div>
+                                            <div class="col-md-3 col-3 me-3 mt-2">
+                                                <h5 class="fw-bold">$<span id="cable1-price">15</span></h5>
+                                            </div>
+                                            <div class="col-md-3 col-3 mt-2">
+                                                <img class=" mb-2 cancel-img" src="images/remove.png" alt="cencel">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                        
+                         <!-- 13th -->
+                         <div class="first">
+                            <div class="row">
+                                <div class="d-flex flex-wrap justify-content-center  rounded p-3 bg-white mt-4">
+                                    <div class="col-md-7">
+                                        <div class="d-flex justify-content-start align-items-center">
+                                            <img class="img-small" src="/images/Tronic/ceiling lights11.jpg" alt="cable1">
+                                            <h5 class="ps-2"> Ceiling lights 11 </h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="d-flex align-items-center mt-2 pt-4">
+                                            <div class="col-md-6 col-6 d-flex justify-content-center align-items-center me-3 pe-2">
+                                                <button class="border-0 bg-transparent" id="cable1-decrease"><i class="fas fa-minus me-3"></i></button>
+                                                <input type="number" style="width: 4rem;" class="from-control fw-bold text-center rounded border-0 bg-light p-2" min="0" value="1" id="cable1-quantity">
+                                                <button class=" border-0 bg-transparent" id="cable1-increase"><i class="fas fa-plus ms-3"></i></button>
+                                            </div>
+                                            <div class="col-md-3 col-3 me-3 mt-2">
+                                                <h5 class="fw-bold">$<span id="cable1-price">15</span></h5>
+                                            </div>
+                                            <div class="col-md-3 col-3 mt-2">
+                                                <img class=" mb-2 cancel-img" src="images/remove.png" alt="cencel">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                        
+                         <!-- 14th -->
+                         <div class="first">
+                            <div class="row">
+                                <div class="d-flex flex-wrap justify-content-center  rounded p-3 bg-white mt-4">
+                                    <div class="col-md-7">
+                                        <div class="d-flex justify-content-start align-items-center">
+                                            <img class="img-small" src="/images/Tronic/ceiling lights2.jpg" alt="cable1">
+                                            <h5 class="ps-2"> Ceiling lights 2 </h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="d-flex align-items-center mt-2 pt-4">
+                                            <div class="col-md-6 col-6 d-flex justify-content-center align-items-center me-3 pe-2">
+                                                <button class="border-0 bg-transparent" id="cable1-decrease"><i class="fas fa-minus me-3"></i></button>
+                                                <input type="number" style="width: 4rem;" class="from-control fw-bold text-center rounded border-0 bg-light p-2" min="0" value="1" id="cable1-quantity">
+                                                <button class=" border-0 bg-transparent" id="cable1-increase"><i class="fas fa-plus ms-3"></i></button>
+                                            </div>
+                                            <div class="col-md-3 col-3 me-3 mt-2">
+                                                <h5 class="fw-bold">$<span id="cable1-price">15</span></h5>
+                                            </div>
+                                            <div class="col-md-3 col-3 mt-2">
+                                                <img class=" mb-2 cancel-img" src="images/remove.png" alt="cencel">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+
+                        <!-- 15th -->
+                        <div class="first">
+                            <div class="row">
+                                <div class="d-flex flex-wrap justify-content-center  rounded p-3 bg-white mt-4">
+                                    <div class="col-md-7">
+                                        <div class="d-flex justify-content-start align-items-center">
+                                            <img class="img-small" src="/images/Tronic/ceiling lights3.jpg" alt="cable">
+                                            <h5 class="ps-2"> Ceiling lights 3 </h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="d-flex align-items-center mt-2 pt-4">
+                                            <div class="col-md-6 col-6 d-flex justify-content-center align-items-center me-3 pe-2">
+                                                <button class="border-0 bg-transparent" id="cable-decrease"><i class="fas fa-minus me-3"></i></button>
+                                                <input type="number" style="width: 4rem;" class="from-control fw-bold text-center rounded border-0 bg-light p-2" min="0" value="1" id="cable-quantity">
+                                                <button class=" border-0 bg-transparent" id="cable-increase"><i class="fas fa-plus ms-3"></i></button>
+                                            </div>
+                                            <div class="col-md-3 col-3 me-3 mt-2">
+                                                <h5 class="fw-bold">$<span id="cable-price">10</span></h5>
+                                            </div>
+                                            <div class="col-md-3 col-3 mt-2">
+                                                <img class=" mb-2 cancel-img" src="images/remove.png" alt="cencel">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                         <!-- 16th -->
+                         <div class="first">
+                            <div class="row">
+                                <div class="d-flex flex-wrap justify-content-center  rounded p-3 bg-white mt-4">
+                                    <div class="col-md-7">
+                                        <div class="d-flex justify-content-start align-items-center">
+                                            <img class="img-small" src="/images/Tronic/ceiling lights4.jpg" alt="cable1">
+                                            <h5 class="ps-2"> Ceiling lights 4  </h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="d-flex align-items-center mt-2 pt-4">
+                                            <div class="col-md-6 col-6 d-flex justify-content-center align-items-center me-3 pe-2">
+                                                <button class="border-0 bg-transparent" id="cable1-decrease"><i class="fas fa-minus me-3"></i></button>
+                                                <input type="number" style="width: 4rem;" class="from-control fw-bold text-center rounded border-0 bg-light p-2" min="0" value="1" id="cable1-quantity">
+                                                <button class=" border-0 bg-transparent" id="cable1-increase"><i class="fas fa-plus ms-3"></i></button>
+                                            </div>
+                                            <div class="col-md-3 col-3 me-3 mt-2">
+                                                <h5 class="fw-bold">$<span id="cable1-price">15</span></h5>
+                                            </div>
+                                            <div class="col-md-3 col-3 mt-2">
+                                                <img class=" mb-2 cancel-img" src="images/remove.png" alt="cencel">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                          <!-- 17th -->
+                          <div class="first">
+                            <div class="row">
+                                <div class="d-flex flex-wrap justify-content-center  rounded p-3 bg-white mt-4">
+                                    <div class="col-md-7">
+                                        <div class="d-flex justify-content-start align-items-center">
+                                            <img class="img-small" src="/images/Tronic/ceiling lights5.jpg" alt="cable1">
+                                            <h5 class="ps-2"> Ceiling lights 5 </h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="d-flex align-items-center mt-2 pt-4">
+                                            <div class="col-md-6 col-6 d-flex justify-content-center align-items-center me-3 pe-2">
+                                                <button class="border-0 bg-transparent" id="cable1-decrease"><i class="fas fa-minus me-3"></i></button>
+                                                <input type="number" style="width: 4rem;" class="from-control fw-bold text-center rounded border-0 bg-light p-2" min="0" value="1" id="cable1-quantity">
+                                                <button class=" border-0 bg-transparent" id="cable1-increase"><i class="fas fa-plus ms-3"></i></button>
+                                            </div>
+                                            <div class="col-md-3 col-3 me-3 mt-2">
+                                                <h5 class="fw-bold">$<span id="cable1-price">15</span></h5>
+                                            </div>
+                                            <div class="col-md-3 col-3 mt-2">
+                                                <img class=" mb-2 cancel-img" src="images/remove.png" alt="cencel">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                       
+
+                         <!-- 18th -->
+                         <div class="first">
+                            <div class="row">
+                                <div class="d-flex flex-wrap justify-content-center  rounded p-3 bg-white mt-4">
+                                    <div class="col-md-7">
+                                        <div class="d-flex justify-content-start align-items-center">
+                                            <img class="img-small" src="/images/Tronic/ceiling lights5.jpg" alt="cable1">
+                                            <h5 class="ps-2"> Ceiling lights 5 </h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="d-flex align-items-center mt-2 pt-4">
+                                            <div class="col-md-6 col-6 d-flex justify-content-center align-items-center me-3 pe-2">
+                                                <button class="border-0 bg-transparent" id="cable1-decrease"><i class="fas fa-minus me-3"></i></button>
+                                                <input type="number" style="width: 4rem;" class="from-control fw-bold text-center rounded border-0 bg-light p-2" min="0" value="1" id="cable1-quantity">
+                                                <button class=" border-0 bg-transparent" id="cable1-increase"><i class="fas fa-plus ms-3"></i></button>
+                                            </div>
+                                            <div class="col-md-3 col-3 me-3 mt-2">
+                                                <h5 class="fw-bold">$<span id="cable1-price">15</span></h5>
+                                            </div>
+                                            <div class="col-md-3 col-3 mt-2">
+                                                <img class=" mb-2 cancel-img" src="images/remove.png" alt="cencel">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                         <!-- 19th -->
+                         <div class="first">
+                            <div class="row">
+                                <div class="d-flex flex-wrap justify-content-center  rounded p-3 bg-white mt-4">
+                                    <div class="col-md-7">
+                                        <div class="d-flex justify-content-start align-items-center">
+                                            <img class="img-small" src="/images/Tronic/ceiling lights6.jpg" alt="cable1">
+                                            <h5 class="ps-2"> Ceiling lights 6 </h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="d-flex align-items-center mt-2 pt-4">
+                                            <div class="col-md-6 col-6 d-flex justify-content-center align-items-center me-3 pe-2">
+                                                <button class="border-0 bg-transparent" id="cable1-decrease"><i class="fas fa-minus me-3"></i></button>
+                                                <input type="number" style="width: 4rem;" class="from-control fw-bold text-center rounded border-0 bg-light p-2" min="0" value="1" id="cable1-quantity">
+                                                <button class=" border-0 bg-transparent" id="cable1-increase"><i class="fas fa-plus ms-3"></i></button>
+                                            </div>
+                                            <div class="col-md-3 col-3 me-3 mt-2">
+                                                <h5 class="fw-bold">$<span id="cable1-price">15</span></h5>
+                                            </div>
+                                            <div class="col-md-3 col-3 mt-2">
+                                                <img class=" mb-2 cancel-img" src="images/remove.png" alt="cencel">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+
+                         <!-- 20th -->
+                         <div class="first">
+                            <div class="row">
+                                <div class="d-flex flex-wrap justify-content-center  rounded p-3 bg-white mt-4">
+                                    <div class="col-md-7">
+                                        <div class="d-flex justify-content-start align-items-center">
+                                            <img class="img-small" src="/images/Tronic/ceiling lights7.jpg" alt="cable1">
+                                            <h5 class="ps-2"> Ceiling lights 7 </h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="d-flex align-items-center mt-2 pt-4">
+                                            <div class="col-md-6 col-6 d-flex justify-content-center align-items-center me-3 pe-2">
+                                                <button class="border-0 bg-transparent" id="cable1-decrease"><i class="fas fa-minus me-3"></i></button>
+                                                <input type="number" style="width: 4rem;" class="from-control fw-bold text-center rounded border-0 bg-light p-2" min="0" value="1" id="cable1-quantity">
+                                                <button class=" border-0 bg-transparent" id="cable1-increase"><i class="fas fa-plus ms-3"></i></button>
+                                            </div>
+                                            <div class="col-md-3 col-3 me-3 mt-2">
+                                                <h5 class="fw-bold">$<span id="cable1-price">15</span></h5>
+                                            </div>
+                                            <div class="col-md-3 col-3 mt-2">
+                                                <img class=" mb-2 cancel-img" src="images/remove.png" alt="cencel">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                         <!-- 21st -->
+                         <div class="first">
+                            <div class="row">
+                                <div class="d-flex flex-wrap justify-content-center  rounded p-3 bg-white mt-4">
+                                    <div class="col-md-7">
+                                        <div class="d-flex justify-content-start align-items-center">
+                                            <img class="img-small" src="/images/Tronic/ceiling lights8.jpg" alt="cable1">
+                                            <h5 class="ps-2"> Ceiling lights 8 </h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="d-flex align-items-center mt-2 pt-4">
+                                            <div class="col-md-6 col-6 d-flex justify-content-center align-items-center me-3 pe-2">
+                                                <button class="border-0 bg-transparent" id="cable1-decrease"><i class="fas fa-minus me-3"></i></button>
+                                                <input type="number" style="width: 4rem;" class="from-control fw-bold text-center rounded border-0 bg-light p-2" min="0" value="1" id="cable1-quantity">
+                                                <button class=" border-0 bg-transparent" id="cable1-increase"><i class="fas fa-plus ms-3"></i></button>
+                                            </div>
+                                            <div class="col-md-3 col-3 me-3 mt-2">
+                                                <h5 class="fw-bold">$<span id="cable1-price">15</span></h5>
+                                            </div>
+                                            <div class="col-md-3 col-3 mt-2">
+                                                <img class=" mb-2 cancel-img" src="images/remove.png" alt="cencel">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>      
+                        
+                          <!-- 22nd -->
+                          <div class="first">
+                            <div class="row">
+                                <div class="d-flex flex-wrap justify-content-center  rounded p-3 bg-white mt-4">
+                                    <div class="col-md-7">
+                                        <div class="d-flex justify-content-start align-items-center">
+                                            <img class="img-small" src="/images/Tronic/ceiling lights9.jpg" alt="cable1">
+                                            <h5 class="ps-2"> Ceiling lights 9 </h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="d-flex align-items-center mt-2 pt-4">
+                                            <div class="col-md-6 col-6 d-flex justify-content-center align-items-center me-3 pe-2">
+                                                <button class="border-0 bg-transparent" id="cable1-decrease"><i class="fas fa-minus me-3"></i></button>
+                                                <input type="number" style="width: 4rem;" class="from-control fw-bold text-center rounded border-0 bg-light p-2" min="0" value="1" id="cable1-quantity">
+                                                <button class=" border-0 bg-transparent" id="cable1-increase"><i class="fas fa-plus ms-3"></i></button>
+                                            </div>
+                                            <div class="col-md-3 col-3 me-3 mt-2">
+                                                <h5 class="fw-bold">$<span id="cable1-price">15</span></h5>
+                                            </div>
+                                            <div class="col-md-3 col-3 mt-2">
+                                                <img class=" mb-2 cancel-img" src="images/remove.png" alt="cencel">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>   
+                         <!-- 23rd-->
+                         <div class="first">
+                            <div class="row">
+                                <div class="d-flex flex-wrap justify-content-center  rounded p-3 bg-white mt-4">
+                                    <div class="col-md-7">
+                                        <div class="d-flex justify-content-start align-items-center">
+                                            <img class="img-small" src="/images/Tronic/compound lights1.jpg" alt="cable1">
+                                            <h5 class="ps-2"> Compound Lights 1</h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="d-flex align-items-center mt-2 pt-4">
+                                            <div class="col-md-6 col-6 d-flex justify-content-center align-items-center me-3 pe-2">
+                                                <button class="border-0 bg-transparent" id="cable1-decrease"><i class="fas fa-minus me-3"></i></button>
+                                                <input type="number" style="width: 4rem;" class="from-control fw-bold text-center rounded border-0 bg-light p-2" min="0" value="1" id="cable1-quantity">
+                                                <button class=" border-0 bg-transparent" id="cable1-increase"><i class="fas fa-plus ms-3"></i></button>
+                                            </div>
+                                            <div class="col-md-3 col-3 me-3 mt-2">
+                                                <h5 class="fw-bold">$<span id="cable1-price">15</span></h5>
+                                            </div>
+                                            <div class="col-md-3 col-3 mt-2">
+                                                <img class=" mb-2 cancel-img" src="images/remove.png" alt="cencel">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                        
+                         <!-- 24th -->
+                         <div class="first">
+                            <div class="row">
+                                <div class="d-flex flex-wrap justify-content-center  rounded p-3 bg-white mt-4">
+                                    <div class="col-md-7">
+                                        <div class="d-flex justify-content-start align-items-center">
+                                            <img class="img-small" src="/images/Tronic/compound lights2.jpg" alt="cable1">
+                                            <h5 class="ps-2"> Compound Lights 2 </h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="d-flex align-items-center mt-2 pt-4">
+                                            <div class="col-md-6 col-6 d-flex justify-content-center align-items-center me-3 pe-2">
+                                                <button class="border-0 bg-transparent" id="cable1-decrease"><i class="fas fa-minus me-3"></i></button>
+                                                <input type="number" style="width: 4rem;" class="from-control fw-bold text-center rounded border-0 bg-light p-2" min="0" value="1" id="cable1-quantity">
+                                                <button class=" border-0 bg-transparent" id="cable1-increase"><i class="fas fa-plus ms-3"></i></button>
+                                            </div>
+                                            <div class="col-md-3 col-3 me-3 mt-2">
+                                                <h5 class="fw-bold">$<span id="cable1-price">15</span></h5>
+                                            </div>
+                                            <div class="col-md-3 col-3 mt-2">
+                                                <img class=" mb-2 cancel-img" src="images/remove.png" alt="cencel">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                        
+                         <!-- 25th -->
+                         <div class="first">
+                            <div class="row">
+                                <div class="d-flex flex-wrap justify-content-center  rounded p-3 bg-white mt-4">
+                                    <div class="col-md-7">
+                                        <div class="d-flex justify-content-start align-items-center">
+                                            <img class="img-small" src="/images/Tronic/compound lights3.jpg" alt="cable1">
+                                            <h5 class="ps-2"> Compound Lights 3 </h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="d-flex align-items-center mt-2 pt-4">
+                                            <div class="col-md-6 col-6 d-flex justify-content-center align-items-center me-3 pe-2">
+                                                <button class="border-0 bg-transparent" id="cable1-decrease"><i class="fas fa-minus me-3"></i></button>
+                                                <input type="number" style="width: 4rem;" class="from-control fw-bold text-center rounded border-0 bg-light p-2" min="0" value="1" id="cable1-quantity">
+                                                <button class=" border-0 bg-transparent" id="cable1-increase"><i class="fas fa-plus ms-3"></i></button>
+                                            </div>
+                                            <div class="col-md-3 col-3 me-3 mt-2">
+                                                <h5 class="fw-bold">$<span id="cable1-price">15</span></h5>
+                                            </div>
+                                            <div class="col-md-3 col-3 mt-2">
+                                                <img class=" mb-2 cancel-img" src="images/remove.png" alt="cencel">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                        
+                        <!-- 26th -->
+                         <div class="first">
+                            <div class="row">
+                                <div class="d-flex flex-wrap justify-content-center  rounded p-3 bg-white mt-4">
+                                    <div class="col-md-7">
+                                        <div class="d-flex justify-content-start align-items-center">
+                                            <img class="img-small" src="/images/Tronic/compound lights4.jpg" alt="cable">
+                                            <h5 class="ps-2"> Compound Lights 4 </h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="d-flex align-items-center mt-2 pt-4">
+                                            <div class="col-md-6 col-6 d-flex justify-content-center align-items-center me-3 pe-2">
+                                                <button class="border-0 bg-transparent" id="cable-decrease"><i class="fas fa-minus me-3"></i></button>
+                                                <input type="number" style="width: 4rem;" class="from-control fw-bold text-center rounded border-0 bg-light p-2" min="0" value="1" id="cable-quantity">
+                                                <button class=" border-0 bg-transparent" id="cable-increase"><i class="fas fa-plus ms-3"></i></button>
+                                            </div>
+                                            <div class="col-md-3 col-3 me-3 mt-2">
+                                                <h5 class="fw-bold">$<span id="cable-price">10</span></h5>
+                                            </div>
+                                            <div class="col-md-3 col-3 mt-2">
+                                                <img class=" mb-2 cancel-img" src="images/remove.png" alt="cencel">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                         <!-- 27th -->
+                         <div class="first">
+                            <div class="row">
+                                <div class="d-flex flex-wrap justify-content-center  rounded p-3 bg-white mt-4">
+                                    <div class="col-md-7">
+                                        <div class="d-flex justify-content-start align-items-center">
+                                            <img class="img-small" src="/images/Tronic/compound lights5.jpg" alt="cable1">
+                                            <h5 class="ps-2"> Compound Lights 5 </h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="d-flex align-items-center mt-2 pt-4">
+                                            <div class="col-md-6 col-6 d-flex justify-content-center align-items-center me-3 pe-2">
+                                                <button class="border-0 bg-transparent" id="cable1-decrease"><i class="fas fa-minus me-3"></i></button>
+                                                <input type="number" style="width: 4rem;" class="from-control fw-bold text-center rounded border-0 bg-light p-2" min="0" value="1" id="cable1-quantity">
+                                                <button class=" border-0 bg-transparent" id="cable1-increase"><i class="fas fa-plus ms-3"></i></button>
+                                            </div>
+                                            <div class="col-md-3 col-3 me-3 mt-2">
+                                                <h5 class="fw-bold">$<span id="cable1-price">15</span></h5>
+                                            </div>
+                                            <div class="col-md-3 col-3 mt-2">
+                                                <img class=" mb-2 cancel-img" src="images/remove.png" alt="cencel">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                          <!-- 28th -->
+                          <div class="first">
+                            <div class="row">
+                                <div class="d-flex flex-wrap justify-content-center  rounded p-3 bg-white mt-4">
+                                    <div class="col-md-7">
+                                        <div class="d-flex justify-content-start align-items-center">
+                                            <img class="img-small" src="/images/Tronic/Extension cable1.jpg" alt="cable1">
+                                            <h5 class="ps-2"> Extension Cable 1 </h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="d-flex align-items-center mt-2 pt-4">
+                                            <div class="col-md-6 col-6 d-flex justify-content-center align-items-center me-3 pe-2">
+                                                <button class="border-0 bg-transparent" id="cable1-decrease"><i class="fas fa-minus me-3"></i></button>
+                                                <input type="number" style="width: 4rem;" class="from-control fw-bold text-center rounded border-0 bg-light p-2" min="0" value="1" id="cable1-quantity">
+                                                <button class=" border-0 bg-transparent" id="cable1-increase"><i class="fas fa-plus ms-3"></i></button>
+                                            </div>
+                                            <div class="col-md-3 col-3 me-3 mt-2">
+                                                <h5 class="fw-bold">$<span id="cable1-price">15</span></h5>
+                                            </div>
+                                            <div class="col-md-3 col-3 mt-2">
+                                                <img class=" mb-2 cancel-img" src="images/remove.png" alt="cencel">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                       
+
+                         <!-- 29th -->
+                         <div class="first">
+                            <div class="row">
+                                <div class="d-flex flex-wrap justify-content-center  rounded p-3 bg-white mt-4">
+                                    <div class="col-md-7">
+                                        <div class="d-flex justify-content-start align-items-center">
+                                            <img class="img-small" src="/images/Tronic/Extension cable10.jpg" alt="cable1">
+                                            <h5 class="ps-2"> Extension Cable 10 </h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="d-flex align-items-center mt-2 pt-4">
+                                            <div class="col-md-6 col-6 d-flex justify-content-center align-items-center me-3 pe-2">
+                                                <button class="border-0 bg-transparent" id="cable1-decrease"><i class="fas fa-minus me-3"></i></button>
+                                                <input type="number" style="width: 4rem;" class="from-control fw-bold text-center rounded border-0 bg-light p-2" min="0" value="1" id="cable1-quantity">
+                                                <button class=" border-0 bg-transparent" id="cable1-increase"><i class="fas fa-plus ms-3"></i></button>
+                                            </div>
+                                            <div class="col-md-3 col-3 me-3 mt-2">
+                                                <h5 class="fw-bold">$<span id="cable1-price">15</span></h5>
+                                            </div>
+                                            <div class="col-md-3 col-3 mt-2">
+                                                <img class=" mb-2 cancel-img" src="images/remove.png" alt="cencel">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                         <!-- 30th -->
+                         <div class="first">
+                            <div class="row">
+                                <div class="d-flex flex-wrap justify-content-center  rounded p-3 bg-white mt-4">
+                                    <div class="col-md-7">
+                                        <div class="d-flex justify-content-start align-items-center">
+                                            <img class="img-small" src="/images/Tronic/Extension cable2.jpg" alt="cable1">
+                                            <h5 class="ps-2"> Extension Cable 2 </h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="d-flex align-items-center mt-2 pt-4">
+                                            <div class="col-md-6 col-6 d-flex justify-content-center align-items-center me-3 pe-2">
+                                                <button class="border-0 bg-transparent" id="cable1-decrease"><i class="fas fa-minus me-3"></i></button>
+                                                <input type="number" style="width: 4rem;" class="from-control fw-bold text-center rounded border-0 bg-light p-2" min="0" value="1" id="cable1-quantity">
+                                                <button class=" border-0 bg-transparent" id="cable1-increase"><i class="fas fa-plus ms-3"></i></button>
+                                            </div>
+                                            <div class="col-md-3 col-3 me-3 mt-2">
+                                                <h5 class="fw-bold">$<span id="cable1-price">15</span></h5>
+                                            </div>
+                                            <div class="col-md-3 col-3 mt-2">
+                                                <img class=" mb-2 cancel-img" src="images/remove.png" alt="cencel">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+
+                         <!-- 31st -->
+                         <div class="first">
+                            <div class="row">
+                                <div class="d-flex flex-wrap justify-content-center  rounded p-3 bg-white mt-4">
+                                    <div class="col-md-7">
+                                        <div class="d-flex justify-content-start align-items-center">
+                                            <img class="img-small" src="/images/Tronic/Extension cable3.jpg" alt="cable1">
+                                            <h5 class="ps-2"> Extension Cable 3 </h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="d-flex align-items-center mt-2 pt-4">
+                                            <div class="col-md-6 col-6 d-flex justify-content-center align-items-center me-3 pe-2">
+                                                <button class="border-0 bg-transparent" id="cable1-decrease"><i class="fas fa-minus me-3"></i></button>
+                                                <input type="number" style="width: 4rem;" class="from-control fw-bold text-center rounded border-0 bg-light p-2" min="0" value="1" id="cable1-quantity">
+                                                <button class=" border-0 bg-transparent" id="cable1-increase"><i class="fas fa-plus ms-3"></i></button>
+                                            </div>
+                                            <div class="col-md-3 col-3 me-3 mt-2">
+                                                <h5 class="fw-bold">$<span id="cable1-price">15</span></h5>
+                                            </div>
+                                            <div class="col-md-3 col-3 mt-2">
+                                                <img class=" mb-2 cancel-img" src="images/remove.png" alt="cencel">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                         <!-- 32nd -->
+                         <div class="first">
+                            <div class="row">
+                                <div class="d-flex flex-wrap justify-content-center  rounded p-3 bg-white mt-4">
+                                    <div class="col-md-7">
+                                        <div class="d-flex justify-content-start align-items-center">
+                                            <img class="img-small" src="/images/Tronic/Extension cable4.jpg" alt="cable1">
+                                            <h5 class="ps-2"> Extension Cable 4 </h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="d-flex align-items-center mt-2 pt-4">
+                                            <div class="col-md-6 col-6 d-flex justify-content-center align-items-center me-3 pe-2">
+                                                <button class="border-0 bg-transparent" id="cable1-decrease"><i class="fas fa-minus me-3"></i></button>
+                                                <input type="number" style="width: 4rem;" class="from-control fw-bold text-center rounded border-0 bg-light p-2" min="0" value="1" id="cable1-quantity">
+                                                <button class=" border-0 bg-transparent" id="cable1-increase"><i class="fas fa-plus ms-3"></i></button>
+                                            </div>
+                                            <div class="col-md-3 col-3 me-3 mt-2">
+                                                <h5 class="fw-bold">$<span id="cable1-price">15</span></h5>
+                                            </div>
+                                            <div class="col-md-3 col-3 mt-2">
+                                                <img class=" mb-2 cancel-img" src="images/remove.png" alt="cencel">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>      
+                        
+                          <!-- 33rd -->
+                          <div class="first">
+                            <div class="row">
+                                <div class="d-flex flex-wrap justify-content-center  rounded p-3 bg-white mt-4">
+                                    <div class="col-md-7">
+                                        <div class="d-flex justify-content-start align-items-center">
+                                            <img class="img-small" src="/images/Tronic/Extension cable5.jpg" alt="cable1">
+                                            <h5 class="ps-2"> Extension Cable 5 </h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="d-flex align-items-center mt-2 pt-4">
+                                            <div class="col-md-6 col-6 d-flex justify-content-center align-items-center me-3 pe-2">
+                                                <button class="border-0 bg-transparent" id="cable1-decrease"><i class="fas fa-minus me-3"></i></button>
+                                                <input type="number" style="width: 4rem;" class="from-control fw-bold text-center rounded border-0 bg-light p-2" min="0" value="1" id="cable1-quantity">
+                                                <button class=" border-0 bg-transparent" id="cable1-increase"><i class="fas fa-plus ms-3"></i></button>
+                                            </div>
+                                            <div class="col-md-3 col-3 me-3 mt-2">
+                                                <h5 class="fw-bold">$<span id="cable1-price">15</span></h5>
+                                            </div>
+                                            <div class="col-md-3 col-3 mt-2">
+                                                <img class=" mb-2 cancel-img" src="images/remove.png" alt="cencel">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>   
+                         <!-- 34th -->
+                         <div class="first">
+                            <div class="row">
+                                <div class="d-flex flex-wrap justify-content-center  rounded p-3 bg-white mt-4">
+                                    <div class="col-md-7">
+                                        <div class="d-flex justify-content-start align-items-center">
+                                            <img class="img-small" src="/images/Tronic/Extension cable6.jpg" alt="cable1">
+                                            <h5 class="ps-2"> Extension Cable 6 </h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="d-flex align-items-center mt-2 pt-4">
+                                            <div class="col-md-6 col-6 d-flex justify-content-center align-items-center me-3 pe-2">
+                                                <button class="border-0 bg-transparent" id="cable1-decrease"><i class="fas fa-minus me-3"></i></button>
+                                                <input type="number" style="width: 4rem;" class="from-control fw-bold text-center rounded border-0 bg-light p-2" min="0" value="1" id="cable1-quantity">
+                                                <button class=" border-0 bg-transparent" id="cable1-increase"><i class="fas fa-plus ms-3"></i></button>
+                                            </div>
+                                            <div class="col-md-3 col-3 me-3 mt-2">
+                                                <h5 class="fw-bold">$<span id="cable1-price">15</span></h5>
+                                            </div>
+                                            <div class="col-md-3 col-3 mt-2">
+                                                <img class=" mb-2 cancel-img" src="images/remove.png" alt="cencel">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                        
+                         <!-- 35th -->
+                         <div class="first">
+                            <div class="row">
+                                <div class="d-flex flex-wrap justify-content-center  rounded p-3 bg-white mt-4">
+                                    <div class="col-md-7">
+                                        <div class="d-flex justify-content-start align-items-center">
+                                            <img class="img-small" src="/images/Tronic/Extension cable7.jpg" alt="cable1">
+                                            <h5 class="ps-2"> Extension Cable 7 </h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="d-flex align-items-center mt-2 pt-4">
+                                            <div class="col-md-6 col-6 d-flex justify-content-center align-items-center me-3 pe-2">
+                                                <button class="border-0 bg-transparent" id="cable1-decrease"><i class="fas fa-minus me-3"></i></button>
+                                                <input type="number" style="width: 4rem;" class="from-control fw-bold text-center rounded border-0 bg-light p-2" min="0" value="1" id="cable1-quantity">
+                                                <button class=" border-0 bg-transparent" id="cable1-increase"><i class="fas fa-plus ms-3"></i></button>
+                                            </div>
+                                            <div class="col-md-3 col-3 me-3 mt-2">
+                                                <h5 class="fw-bold">$<span id="cable1-price">15</span></h5>
+                                            </div>
+                                            <div class="col-md-3 col-3 mt-2">
+                                                <img class=" mb-2 cancel-img" src="images/remove.png" alt="cencel">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                        
+                         <!-- 36th -->
+                         <div class="first">
+                            <div class="row">
+                                <div class="d-flex flex-wrap justify-content-center  rounded p-3 bg-white mt-4">
+                                    <div class="col-md-7">
+                                        <div class="d-flex justify-content-start align-items-center">
+                                            <img class="img-small" src="/images/Tronic/Extension cable8.jpg" alt="cable1">
+                                            <h5 class="ps-2"> Extension Cable 8 </h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="d-flex align-items-center mt-2 pt-4">
+                                            <div class="col-md-6 col-6 d-flex justify-content-center align-items-center me-3 pe-2">
+                                                <button class="border-0 bg-transparent" id="cable1-decrease"><i class="fas fa-minus me-3"></i></button>
+                                                <input type="number" style="width: 4rem;" class="from-control fw-bold text-center rounded border-0 bg-light p-2" min="0" value="1" id="cable1-quantity">
+                                                <button class=" border-0 bg-transparent" id="cable1-increase"><i class="fas fa-plus ms-3"></i></button>
+                                            </div>
+                                            <div class="col-md-3 col-3 me-3 mt-2">
+                                                <h5 class="fw-bold">$<span id="cable1-price">15</span></h5>
+                                            </div>
+                                            <div class="col-md-3 col-3 mt-2">
+                                                <img class=" mb-2 cancel-img" src="images/remove.png" alt="cencel">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                        
+                        <!-- 37th -->
+                         <div class="first">
+                            <div class="row">
+                                <div class="d-flex flex-wrap justify-content-center  rounded p-3 bg-white mt-4">
+                                    <div class="col-md-7">
+                                        <div class="d-flex justify-content-start align-items-center">
+                                            <img class="img-small" src="/images/Tronic/Extension cable9.jpg" alt="cable">
+                                            <h5 class="ps-2"> Extension Cable 9</h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="d-flex align-items-center mt-2 pt-4">
+                                            <div class="col-md-6 col-6 d-flex justify-content-center align-items-center me-3 pe-2">
+                                                <button class="border-0 bg-transparent" id="cable-decrease"><i class="fas fa-minus me-3"></i></button>
+                                                <input type="number" style="width: 4rem;" class="from-control fw-bold text-center rounded border-0 bg-light p-2" min="0" value="1" id="cable-quantity">
+                                                <button class=" border-0 bg-transparent" id="cable-increase"><i class="fas fa-plus ms-3"></i></button>
+                                            </div>
+                                            <div class="col-md-3 col-3 me-3 mt-2">
+                                                <h5 class="fw-bold">$<span id="cable-price">10</span></h5>
+                                            </div>
+                                            <div class="col-md-3 col-3 mt-2">
+                                                <img class=" mb-2 cancel-img" src="images/remove.png" alt="cencel">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                         <!-- 38th -->
+                         <div class="first">
+                            <div class="row">
+                                <div class="d-flex flex-wrap justify-content-center  rounded p-3 bg-white mt-4">
+                                    <div class="col-md-7">
+                                        <div class="d-flex justify-content-start align-items-center">
+                                            <img class="img-small" src="/images/Tronic/garden lights1.jpg" alt="cable1">
+                                            <h5 class="ps-2"> Garden Lights 1 </h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="d-flex align-items-center mt-2 pt-4">
+                                            <div class="col-md-6 col-6 d-flex justify-content-center align-items-center me-3 pe-2">
+                                                <button class="border-0 bg-transparent" id="cable1-decrease"><i class="fas fa-minus me-3"></i></button>
+                                                <input type="number" style="width: 4rem;" class="from-control fw-bold text-center rounded border-0 bg-light p-2" min="0" value="1" id="cable1-quantity">
+                                                <button class=" border-0 bg-transparent" id="cable1-increase"><i class="fas fa-plus ms-3"></i></button>
+                                            </div>
+                                            <div class="col-md-3 col-3 me-3 mt-2">
+                                                <h5 class="fw-bold">$<span id="cable1-price">15</span></h5>
+                                            </div>
+                                            <div class="col-md-3 col-3 mt-2">
+                                                <img class=" mb-2 cancel-img" src="images/remove.png" alt="cencel">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                          <!-- 39th -->
+                          <div class="first">
+                            <div class="row">
+                                <div class="d-flex flex-wrap justify-content-center  rounded p-3 bg-white mt-4">
+                                    <div class="col-md-7">
+                                        <div class="d-flex justify-content-start align-items-center">
+                                            <img class="img-small" src="/images/Tronic/garden lights2.jpg" alt="cable1">
+                                            <h5 class="ps-2"> Garden Lights 2 </h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="d-flex align-items-center mt-2 pt-4">
+                                            <div class="col-md-6 col-6 d-flex justify-content-center align-items-center me-3 pe-2">
+                                                <button class="border-0 bg-transparent" id="cable1-decrease"><i class="fas fa-minus me-3"></i></button>
+                                                <input type="number" style="width: 4rem;" class="from-control fw-bold text-center rounded border-0 bg-light p-2" min="0" value="1" id="cable1-quantity">
+                                                <button class=" border-0 bg-transparent" id="cable1-increase"><i class="fas fa-plus ms-3"></i></button>
+                                            </div>
+                                            <div class="col-md-3 col-3 me-3 mt-2">
+                                                <h5 class="fw-bold">$<span id="cable1-price">15</span></h5>
+                                            </div>
+                                            <div class="col-md-3 col-3 mt-2">
+                                                <img class=" mb-2 cancel-img" src="images/remove.png" alt="cencel">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                       
+
+                         <!-- 40th -->
+                         <div class="first">
+                            <div class="row">
+                                <div class="d-flex flex-wrap justify-content-center  rounded p-3 bg-white mt-4">
+                                    <div class="col-md-7">
+                                        <div class="d-flex justify-content-start align-items-center">
+                                            <img class="img-small" src="/images/Tronic/garden lights3.jpg" alt="cable1">
+                                            <h5 class="ps-2"> Garden Lights 3 </h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="d-flex align-items-center mt-2 pt-4">
+                                            <div class="col-md-6 col-6 d-flex justify-content-center align-items-center me-3 pe-2">
+                                                <button class="border-0 bg-transparent" id="cable1-decrease"><i class="fas fa-minus me-3"></i></button>
+                                                <input type="number" style="width: 4rem;" class="from-control fw-bold text-center rounded border-0 bg-light p-2" min="0" value="1" id="cable1-quantity">
+                                                <button class=" border-0 bg-transparent" id="cable1-increase"><i class="fas fa-plus ms-3"></i></button>
+                                            </div>
+                                            <div class="col-md-3 col-3 me-3 mt-2">
+                                                <h5 class="fw-bold">$<span id="cable1-price">15</span></h5>
+                                            </div>
+                                            <div class="col-md-3 col-3 mt-2">
+                                                <img class=" mb-2 cancel-img" src="images/remove.png" alt="cencel">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                         <!-- 41st -->
+                         <div class="first">
+                            <div class="row">
+                                <div class="d-flex flex-wrap justify-content-center  rounded p-3 bg-white mt-4">
+                                    <div class="col-md-7">
+                                        <div class="d-flex justify-content-start align-items-center">
+                                            <img class="img-small" src="/images/Tronic/garden lights4.jpg" alt="cable1">
+                                            <h5 class="ps-2"> Garden Lights 4 </h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="d-flex align-items-center mt-2 pt-4">
+                                            <div class="col-md-6 col-6 d-flex justify-content-center align-items-center me-3 pe-2">
+                                                <button class="border-0 bg-transparent" id="cable1-decrease"><i class="fas fa-minus me-3"></i></button>
+                                                <input type="number" style="width: 4rem;" class="from-control fw-bold text-center rounded border-0 bg-light p-2" min="0" value="1" id="cable1-quantity">
+                                                <button class=" border-0 bg-transparent" id="cable1-increase"><i class="fas fa-plus ms-3"></i></button>
+                                            </div>
+                                            <div class="col-md-3 col-3 me-3 mt-2">
+                                                <h5 class="fw-bold">$<span id="cable1-price">15</span></h5>
+                                            </div>
+                                            <div class="col-md-3 col-3 mt-2">
+                                                <img class=" mb-2 cancel-img" src="images/remove.png" alt="cencel">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+
+                         <!-- 42nd -->
+                         <div class="first">
+                            <div class="row">
+                                <div class="d-flex flex-wrap justify-content-center  rounded p-3 bg-white mt-4">
+                                    <div class="col-md-7">
+                                        <div class="d-flex justify-content-start align-items-center">
+                                            <img class="img-small" src="/images/Tronic/garden lights5.jpg" alt="cable1">
+                                            <h5 class="ps-2"> Garden Lights 5 </h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="d-flex align-items-center mt-2 pt-4">
+                                            <div class="col-md-6 col-6 d-flex justify-content-center align-items-center me-3 pe-2">
+                                                <button class="border-0 bg-transparent" id="cable1-decrease"><i class="fas fa-minus me-3"></i></button>
+                                                <input type="number" style="width: 4rem;" class="from-control fw-bold text-center rounded border-0 bg-light p-2" min="0" value="1" id="cable1-quantity">
+                                                <button class=" border-0 bg-transparent" id="cable1-increase"><i class="fas fa-plus ms-3"></i></button>
+                                            </div>
+                                            <div class="col-md-3 col-3 me-3 mt-2">
+                                                <h5 class="fw-bold">$<span id="cable1-price">15</span></h5>
+                                            </div>
+                                            <div class="col-md-3 col-3 mt-2">
+                                                <img class=" mb-2 cancel-img" src="images/remove.png" alt="cencel">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                         <!-- 43rd -->
+                         <div class="first">
+                            <div class="row">
+                                <div class="d-flex flex-wrap justify-content-center  rounded p-3 bg-white mt-4">
+                                    <div class="col-md-7">
+                                        <div class="d-flex justify-content-start align-items-center">
+                                            <img class="img-small" src="/images/Tronic/garden lights7.jpg" alt="Bulb1">
+                                            <h5 class="ps-2"> Garden Lights 7 </h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="d-flex align-items-center mt-2 pt-4">
+                                            <div class="col-md-6 col-6 d-flex justify-content-center align-items-center me-3 pe-2">
+                                                <button class="border-0 bg-transparent" id="cable1-decrease"><i class="fas fa-minus me-3"></i></button>
+                                                <input type="number" style="width: 4rem;" class="from-control fw-bold text-center rounded border-0 bg-light p-2" min="0" value="1" id="cable1-quantity">
+                                                <button class=" border-0 bg-transparent" id="cable1-increase"><i class="fas fa-plus ms-3"></i></button>
+                                            </div>
+                                            <div class="col-md-3 col-3 me-3 mt-2">
+                                                <h5 class="fw-bold">$<span id="cable1-price">15</span></h5>
+                                            </div>
+                                            <div class="col-md-3 col-3 mt-2">
+                                                <img class=" mb-2 cancel-img" src="images/remove.png" alt="cencel">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>      
+
+                        <!-- cal -->
+                        <div class="calculation">
+                            <div class="row">
+                                <div class="d-flex justify-content-center align-items-center  p-5 rounded bg-white mt-4">
+                                    <div class="col-md-6 text-start ms-5">
+                                        <h5 class="me-5">Subtotal: </h5>
+                                        <h5>Tax:</h5>
+                                        <h5>Total:</h5>
+                                    </div>
+                                    <div class="col-md-6 text-end me-5 pe-4">
+                                        <h5>$<span id="subtotal">1278</span></h5>
+                                        <h5>$<span id="tax">0</span></h5>
+                                        <h5>$<span id="total">1278</span></h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- button -->
+                        <div class="text-end">
+                            <button class="btn btn-success fw-bold px-5 shadow-lg rounded-pill mt-5" id="check-out">Check out</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- main js -->
+    <script src="js/main.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
