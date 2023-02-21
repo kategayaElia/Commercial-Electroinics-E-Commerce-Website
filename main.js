@@ -25,6 +25,8 @@ function getInputValue(product){
 // calculate total
 function calculateTotal(){
 
+    const phoneTotal = getInputValue('iphone') * 1219;
+    const caseTotal = getInputValue('case') * 59;
     const Bulb1Total = getInputValue('Bulb1') * 2;
     const Bulb10Total = getInputValue('Bulb10') * 2;
     const Bulb11Total = getInputValue('Bulb11') * 2;
@@ -51,29 +53,24 @@ function calculateTotal(){
     const compound3Total = getInputValue('compound3') * 10;
     const compound4Total = getInputValue('compound4') * 10;
     const compound5Total = getInputValue('compound5') * 10;
-    const  cable1Total = getInputValue(' cable1') * 10;
-    const  cable10Total = getInputValue(' cable10') * 10;
-    const  cable2Total = getInputValue(' cable2') * 10;
-    const  cable3Total = getInputValue(' cable3') * 10;
-    const  cable4Total = getInputValue(' cable4') * 10;
-    const  cable5Total = getInputValue(' cable5') * 10;
-    const  cable6Total = getInputValue(' cable6') * 10;
-    const  cable7Total = getInputValue(' cable7') * 10;
-    const  cable8Total = getInputValue(' cable8') * 10;
-    const  cable9Total = getInputValue(' cable9') * 10;
-    const  garden1Total = getInputValue(' garden1') * 10;
-    const  garden2Total = getInputValue(' garden2') * 10;
-    const  garden3Total = getInputValue(' garden3') * 10;
-    const  garden4Total = getInputValue(' garden4') * 10;
-    const  garden5Total = getInputValue(' garden5') * 10;
-    const  garden7Total = getInputValue(' garden7') * 10;
+    const case1Total = getInputValue('case1') * 11;
+    const case2Total = getInputValue('case2') * 11;
+    const case3Total = getInputValue('case3') * 11;
+    const case4Total = getInputValue('case4') * 11;
+    const case5Total = getInputValue('case5') * 11;
+    const case6Total = getInputValue('case6') * 11;
+    const case7Total = getInputValue('case7') * 11;
+    const case8Total = getInputValue('case8') * 11;
+    const case9Total = getInputValue('case9') * 11;
+    const case10Total = getInputValue('case10') * 11;
+    const case11Total = getInputValue('case11') * 15;
+    const case12Total = getInputValue('case12') * 15;
+    const case13Total = getInputValue('case13') * 15;
+    const case14Total = getInputValue('case14') * 15;
+    const case15Total = getInputValue('case15') * 15;
+    const case16Total = getInputValue('case16') * 15;
 
-    
-
-    const subTotal = Bulb1Total + Bulb10Total + Bulb11Total + Bulb2Total + Bulb3Total + Bulb5Total + Bulb6Total  + Bulb7Total + Bulb8Total + Bulb9Total + lights1Total 
-     + lights10Total + lights11Total + lights2Total + lights3Total + lights4Total + lights5Total + lights6Total + lights7Total +  lights8Total + lights9Total + compound1Total + compound2Total
-      + compound3Total + compound4Total + compound5Total + cable1Total + cable10Total + cable2Total + cable3Total + cable4Total + cable5Total + cable6Total + cable7Total + cable8Total + cable9Total 
-      + garden1Total + garden2Total + garden3Total +  garden4Total + garden5Total + garden7Total;
+    const subTotal = phoneTotal + caseTotal + Bulb1Total + Bulb10Total + Bulb11Total + Bulb2Total + Bulb3Total + Bulb5Total + Bulb6Total  + Bulb7Total + Bulb8Total + Bulb9Total + lights1Total  + lights10Total + lights11Total + lights2Total + lights3Total + lights4Total + lights5Total + lights6Total + lights7Total +  lights8Total + lights9Total + compound1Total + compound2Total+ compound3Total + compound4Total + compound5Total + case1Total + case2Total + case3Total + case4Total + case5Total + case6Total + case7Total + case8Total + case9Total + case10Total + case11Total + case12Total + case13Total + case14Total + case15Total + case16Total;
     const tax = subTotal / 10;
     const total = subTotal + tax;
 
@@ -81,9 +78,25 @@ function calculateTotal(){
     document.getElementById('tax').innerText = tax;
     document.getElementById('total').innerText = total;
 
-
 }
 
+// phone increase
+document.getElementById('iphone-increase').addEventListener('click', function(){
+    updateNumber('iphone', 1219, true);
+})
+// phone decrease
+document.getElementById('iphone-decrease').addEventListener('click', function(){
+    updateNumber('iphone', 1219, false);
+})
+
+// case increase
+document.getElementById('case-increase').addEventListener('click', function(){
+    updateNumber('case', 59, true);
+})
+// case decrease
+document.getElementById('case-decrease').addEventListener('click', function(){
+    updateNumber('case', 59, false);
+})
 
 // Bulb1 increase
 document.getElementById('Bulb1-increase').addEventListener('click', function(){
@@ -357,176 +370,166 @@ document.getElementById('compound5-decrease').addEventListener('click', function
     updateNumber('compound5', 5, false);
 }) 
 
-// cable1 increase
-document.getElementById('cable1-increase').addEventListener('click', function(){
-    updateNumber('cable1', 11, true);
+// case1 increase
+document.getElementById('case1-increase').addEventListener('click', function(){
+    updateNumber('case1', 11, true);
 })
 
-// cable1 decrease
-document.getElementById('cable1-decrease').addEventListener('click', function(){
-    updateNumber('cable1', 11, false);
+// case1 decrease
+document.getElementById('case1-decrease').addEventListener('click', function(){
+    updateNumber('case1', 11, false);
 }) 
 
-// cable10 increase
-document.getElementById('cable10-increase').addEventListener('click', function(){
-    updateNumber('cable10', 11, true);
+// case2 increase
+document.getElementById('case2-increase').addEventListener('click', function(){
+    updateNumber('case2', 11, true);
 })
 
-// cable10 decrease
-document.getElementById('cable10-decrease').addEventListener('click', function(){
-    updateNumber('cable10', 11, false);
+// case2 decrease
+document.getElementById('case2-decrease').addEventListener('click', function(){
+    updateNumber('case2', 11, false);
 }) 
 
-// cable2 increase
-document.getElementById('cable2-increase').addEventListener('click', function(){
-    updateNumber('cable2', 11, true);
+// case3 increase
+document.getElementById('case3-increase').addEventListener('click', function(){
+    updateNumber('case3', 11, true);
 })
 
-// cable2 decrease
-document.getElementById('cable2-decrease').addEventListener('click', function(){
-    updateNumber('cable2', 11, false);
+// case3 decrease
+document.getElementById('case3-decrease').addEventListener('click', function(){
+    updateNumber('case3', 11, false);
 }) 
 
-// cable3 increase
-document.getElementById('cable3-increase').addEventListener('click', function(){
-    updateNumber('cable3', 11, true);
+// case4 increase
+document.getElementById('case4-increase').addEventListener('click', function(){
+    updateNumber('case4', 11, true);
 })
 
-// cable3 decrease
-document.getElementById('cable3-decrease').addEventListener('click', function(){
-    updateNumber('cable3', 11, false);
+// case4 decrease
+document.getElementById('case4-decrease').addEventListener('click', function(){
+    updateNumber('case4', 11, false);
 }) 
 
-// cable4 increase
-document.getElementById('cable4-increase').addEventListener('click', function(){
-    updateNumber('cable4', 11, true);
+// case5 increase
+document.getElementById('case5-increase').addEventListener('click', function(){
+    updateNumber('case5', 11, true);
 })
 
-// cable4 decrease
-document.getElementById('cable4-decrease').addEventListener('click', function(){
-    updateNumber('cable4', 11, false);
+// case5 decrease
+document.getElementById('case5-decrease').addEventListener('click', function(){
+    updateNumber('case5', 11, false);
 }) 
 
-// cable5 increase
-document.getElementById('cable5-increase').addEventListener('click', function(){
-    updateNumber('cable5', 11, true);
+// case6 increase
+document.getElementById('case6-increase').addEventListener('click', function(){
+    updateNumber('case6', 11, true);
 })
 
-// cable5 decrease
-document.getElementById('cable5-decrease').addEventListener('click', function(){
-    updateNumber('cable5', 11, false);
+// case6 decrease
+document.getElementById('case6-decrease').addEventListener('click', function(){
+    updateNumber('case6', 11, false);
 }) 
 
-// cable5 increase
-document.getElementById('cable5-increase').addEventListener('click', function(){
-    updateNumber('cable5', 11, true);
+// case7 increase
+document.getElementById('case7-increase').addEventListener('click', function(){
+    updateNumber('case7', 11, true);
 })
 
-// cable5 decrease
-document.getElementById('cable3-decrease').addEventListener('click', function(){
-    updateNumber('cable3', 11, false);
+// case7 decrease
+document.getElementById('case7-decrease').addEventListener('click', function(){
+    updateNumber('case7', 11, false);
+})
+
+// case8 increase
+document.getElementById('case8-increase').addEventListener('click', function(){
+    updateNumber('case8', 11, true);
+})
+
+// case8 decrease
+document.getElementById('case8-decrease').addEventListener('click', function(){
+    updateNumber('case8', 11, false);
+})
+
+// case9 increase
+document.getElementById('case9-increase').addEventListener('click', function(){
+    updateNumber('case9', 11, true);
+})
+
+// case9 decrease
+document.getElementById('case9-decrease').addEventListener('click', function(){
+    updateNumber('case9', 11, false);
+})
+
+// case10 increase
+document.getElementById('case10-increase').addEventListener('click', function(){
+    updateNumber('case10', 11, true);
+})
+
+// case10 decrease
+document.getElementById('case10-decrease').addEventListener('click', function(){
+    updateNumber('case10', 11, false);
+})
+
+// case11 increase
+document.getElementById('case11-increase').addEventListener('click', function(){
+    updateNumber('case11', 15, true);
+})
+
+// case11 decrease
+document.getElementById('case11-decrease').addEventListener('click', function(){
+    updateNumber('case11', 15, false);
 }) 
 
-// cable6 increase
-document.getElementById('cable6-increase').addEventListener('click', function(){
-    updateNumber('cable6', 11, true);
+// case12 increase
+document.getElementById('case12-increase').addEventListener('click', function(){
+    updateNumber('case12', 15, true);
 })
 
-// cable6 decrease
-document.getElementById('cable6-decrease').addEventListener('click', function(){
-    updateNumber('cable6', 11, false);
+// case12 decrease
+document.getElementById('case12-decrease').addEventListener('click', function(){
+    updateNumber('case12', 15, false);
 }) 
 
-// cable7 increase
-document.getElementById('cable7-increase').addEventListener('click', function(){
-    updateNumber('cable7', 11, true);
+// case13 increase
+document.getElementById('case13-increase').addEventListener('click', function(){
+    updateNumber('case13', 15, true);
 })
 
-// cable7 decrease
-document.getElementById('cable7-decrease').addEventListener('click', function(){
-    updateNumber('cable7', 11, false);
+// case13 decrease
+document.getElementById('case13-decrease').addEventListener('click', function(){
+    updateNumber('case13', 15, false);
 })
 
-// cable8 increase
-document.getElementById('cable8-increase').addEventListener('click', function(){
-    updateNumber('cable8', 11, true);
+
+// case14 increase
+document.getElementById('case14-increase').addEventListener('click', function(){
+    updateNumber('case14', 15, true);
 })
 
-// cable8 decrease
-document.getElementById('cable8-decrease').addEventListener('click', function(){
-    updateNumber('cable8', 11, false);
-}) 
-
-// cable9 increase
-document.getElementById('cable9-increase').addEventListener('click', function(){
-    updateNumber('cable9', 11, true);
+// case14 decrease
+document.getElementById('case14-decrease').addEventListener('click', function(){
+    updateNumber('case14', 15, false);
 })
 
-// cable9 decrease
-document.getElementById('cable9-decrease').addEventListener('click', function(){
-    updateNumber('cable9', 11, false);
-}) 
-
-// garden1 increase
-document.getElementById('garden1-increase').addEventListener('click', function(){
-    updateNumber('garden1', 20, true);
+// case15 increase
+document.getElementById('case15-increase').addEventListener('click', function(){
+    updateNumber('case15', 15, true);
 })
 
-// garden1 decrease
-document.getElementById('garden1-decrease').addEventListener('click', function(){
-    updateNumber('garden1', 20, false);
-}) 
-
-// garden2 increase
-document.getElementById('garden2-increase').addEventListener('click', function(){
-    updateNumber('garden2', 20, true);
+// case15 decrease
+document.getElementById('case15-decrease').addEventListener('click', function(){
+    updateNumber('case15', 15, false);
 })
 
-// garden2 decrease
-document.getElementById('garden2-decrease').addEventListener('click', function(){
-    updateNumber('garden2', 20, false);
-}) 
-
-// garden3 increase
-document.getElementById('garden3-increase').addEventListener('click', function(){
-    updateNumber('garden3', 20, true);
+// case16 increase
+document.getElementById('case16-increase').addEventListener('click', function(){
+    updateNumber('case16', 15, true);
 })
 
-// garden3 decrease
-document.getElementById('garden3-decrease').addEventListener('click', function(){
-    updateNumber('garden3', 20, false);
-}) 
-
-// garden4 increase
-document.getElementById('garden4-increase').addEventListener('click', function(){
-    updateNumber('garden4', 20, true);
+// case16 decrease
+document.getElementById('case16-decrease').addEventListener('click', function(){
+    updateNumber('case16', 15, false);
 })
-
-// garden4 decrease
-document.getElementById('garden4-decrease').addEventListener('click', function(){
-    updateNumber('garden4', 20, false);
-}) 
-
-// garden5 increase
-document.getElementById('garden5-increase').addEventListener('click', function(){
-    updateNumber('garden5', 20, true);
-})
-
-// garden5 decrease
-document.getElementById('garden5-decrease').addEventListener('click', function(){
-    updateNumber('garden5', 20, false);
-}) 
-
-// garden7 increase
-document.getElementById('garden7-increase').addEventListener('click', function(){
-    updateNumber('garden7', 20, true);
-})
-
-// garden7 decrease
-document.getElementById('garden7-decrease').addEventListener('click', function(){
-    updateNumber('garden7', 20, false);
-}) 
-
 
 // check out
 document.getElementById('check-out').addEventListener('click', function(){
